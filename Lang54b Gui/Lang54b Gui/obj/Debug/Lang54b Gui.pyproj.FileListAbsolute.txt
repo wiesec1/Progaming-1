@@ -1,0 +1,12 @@
+C:\Users\wiese.c1\Desktop\Progaming 1\Lang54b Gui\Lang54b Gui\bin\Debug\Lang54b Gui.exe.config
+C:\Users\wiese.c1\Desktop\Progaming 1\Lang54b Gui\Lang54b Gui\bin\Debug\Lang54b Gui.exe
+C:\Users\wiese.c1\Desktop\Progaming 1\Lang54b Gui\Lang54b Gui\bin\Debug\Lang54b Gui.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Lang54b Gui\Lang54b Gui\bin\Debug\IronPython.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Lang54b Gui\Lang54b Gui\bin\Debug\IronPython.Modules.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Lang54b Gui\Lang54b Gui\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Lang54b Gui\Lang54b Gui\bin\Debug\Microsoft.Scripting.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Lang54b Gui\Lang54b Gui\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Lang54b Gui\Lang54b Gui\obj\Debug\Lang54b Gui.pyprojResolveAssemblyReference.cache
+C:\Users\wiese.c1\Desktop\Progaming 1\Lang54b Gui\Lang54b Gui\obj\Debug\Lang54b_Gui.MainForm.resources
+C:\Users\wiese.c1\Desktop\Progaming 1\Lang54b Gui\Lang54b Gui\obj\Debug\Lang54b Gui.pyproj.GenerateResource.Cache
+C:\Users\wiese.c1\Desktop\Progaming 1\Lang54b Gui\Lang54b Gui\obj\Debug\Lang54b Gui.exe

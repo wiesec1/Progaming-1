@@ -1,0 +1,12 @@
+C:\Users\wiese.c1\Desktop\Progaming 1\Favortie Quote\Favortie Quote\bin\Debug\Favortie Quote.exe.config
+C:\Users\wiese.c1\Desktop\Progaming 1\Favortie Quote\Favortie Quote\bin\Debug\Favortie Quote.exe
+C:\Users\wiese.c1\Desktop\Progaming 1\Favortie Quote\Favortie Quote\bin\Debug\Favortie Quote.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Favortie Quote\Favortie Quote\bin\Debug\IronPython.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Favortie Quote\Favortie Quote\bin\Debug\IronPython.Modules.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Favortie Quote\Favortie Quote\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Favortie Quote\Favortie Quote\bin\Debug\Microsoft.Scripting.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Favortie Quote\Favortie Quote\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Favortie Quote\Favortie Quote\obj\Debug\Favortie Quote.pyprojResolveAssemblyReference.cache
+C:\Users\wiese.c1\Desktop\Progaming 1\Favortie Quote\Favortie Quote\obj\Debug\Favortie_Quote.MainForm.resources
+C:\Users\wiese.c1\Desktop\Progaming 1\Favortie Quote\Favortie Quote\obj\Debug\Favortie Quote.pyproj.GenerateResource.Cache
+C:\Users\wiese.c1\Desktop\Progaming 1\Favortie Quote\Favortie Quote\obj\Debug\Favortie Quote.exe

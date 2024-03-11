@@ -1,0 +1,12 @@
+C:\Users\wiese.c1\Desktop\Progaming 1\favortie Club GUI\favortie Club GUI\bin\Debug\favortie Club GUI.exe.config
+C:\Users\wiese.c1\Desktop\Progaming 1\favortie Club GUI\favortie Club GUI\bin\Debug\favortie Club GUI.exe
+C:\Users\wiese.c1\Desktop\Progaming 1\favortie Club GUI\favortie Club GUI\bin\Debug\favortie Club GUI.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\favortie Club GUI\favortie Club GUI\bin\Debug\IronPython.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\favortie Club GUI\favortie Club GUI\bin\Debug\IronPython.Modules.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\favortie Club GUI\favortie Club GUI\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\favortie Club GUI\favortie Club GUI\bin\Debug\Microsoft.Scripting.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\favortie Club GUI\favortie Club GUI\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\favortie Club GUI\favortie Club GUI\obj\Debug\favortie Club GUI.pyprojResolveAssemblyReference.cache
+C:\Users\wiese.c1\Desktop\Progaming 1\favortie Club GUI\favortie Club GUI\obj\Debug\favortie_Club_GUI.MainForm.resources
+C:\Users\wiese.c1\Desktop\Progaming 1\favortie Club GUI\favortie Club GUI\obj\Debug\favortie Club GUI.pyproj.GenerateResource.Cache
+C:\Users\wiese.c1\Desktop\Progaming 1\favortie Club GUI\favortie Club GUI\obj\Debug\favortie Club GUI.exe

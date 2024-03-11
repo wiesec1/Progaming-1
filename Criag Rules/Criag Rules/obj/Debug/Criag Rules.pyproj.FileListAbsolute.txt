@@ -1,0 +1,12 @@
+C:\Users\wiese.c1\Desktop\Progaming 1\Criag Rules\Criag Rules\bin\Debug\Criag Rules.exe.config
+C:\Users\wiese.c1\Desktop\Progaming 1\Criag Rules\Criag Rules\bin\Debug\Criag Rules.exe
+C:\Users\wiese.c1\Desktop\Progaming 1\Criag Rules\Criag Rules\bin\Debug\Criag Rules.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Criag Rules\Criag Rules\bin\Debug\IronPython.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Criag Rules\Criag Rules\bin\Debug\IronPython.Modules.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Criag Rules\Criag Rules\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Criag Rules\Criag Rules\bin\Debug\Microsoft.Scripting.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Criag Rules\Criag Rules\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\Criag Rules\Criag Rules\obj\Debug\Criag Rules.pyprojResolveAssemblyReference.cache
+C:\Users\wiese.c1\Desktop\Progaming 1\Criag Rules\Criag Rules\obj\Debug\Criag_Rules.MainForm.resources
+C:\Users\wiese.c1\Desktop\Progaming 1\Criag Rules\Criag Rules\obj\Debug\Criag Rules.pyproj.GenerateResource.Cache
+C:\Users\wiese.c1\Desktop\Progaming 1\Criag Rules\Criag Rules\obj\Debug\Criag Rules.exe
