@@ -264,4 +264,7 @@ class MainForm(Form):
 		purchase = float(self._textBox1.Text)
 		amount = float(self._textBox2.Text)
 		change = amount - purchase
-		self._label9.Text = str(
+		self._label9.Text = str(change)
+		self._label10.Text = str(dollars)
+		dollars = change / dollars
+		dollars = 1
