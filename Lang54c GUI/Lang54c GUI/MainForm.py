@@ -143,10 +143,10 @@ class MainForm(Form):
 
 	def Button1Click(self, sender, e):
 		radius = float(self._textBox1.Text) 
-		pi = 3.141559 
+		pi = 3.14159 
 		area = pi * radius ** 2
 		area = round(area, 3)
-		circumference = 2 * (radius)
+		circumference = 2 * pi * (radius)
 		self._label3.Text = str(area)
 		self._label5.Text = str(circumference)
 	
