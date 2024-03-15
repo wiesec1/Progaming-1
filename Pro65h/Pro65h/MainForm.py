@@ -64,7 +64,7 @@ class MainForm(Form):
 		self._label4.Name = "label4"
 		self._label4.Size = System.Drawing.Size(298, 42)
 		self._label4.TabIndex = 3
-		self._label4.Text = "Decmials Pounds ="
+		self._label4.Text = "Decimals Pounds ="
 		# 
 		# textBox1
 		# 
@@ -176,7 +176,8 @@ class MainForm(Form):
 		self._textBox3.Text = " "
 
 	def Button1Click(self, sender, e):
-		self._textBox1.Text = int(pound)
-		self._textBox2.Text = int(shilling)
-		self._textBox3.Text = int(Pence)
-		self._label5.Text = float(
+		pounds = int(self._textBox1.Text)
+		shilling = int(self._textBox2.Text)
+		pence = int(self._textBox3.Text)
+		decimals = 7.89
+		self._label5.Text = str(decimals)
