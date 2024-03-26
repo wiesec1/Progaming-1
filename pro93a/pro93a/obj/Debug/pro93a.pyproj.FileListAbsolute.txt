@@ -1,0 +1,12 @@
+C:\Users\wiese.c1\Desktop\Progaming 1\pro93a\pro93a\bin\Debug\pro93a.exe.config
+C:\Users\wiese.c1\Desktop\Progaming 1\pro93a\pro93a\bin\Debug\pro93a.exe
+C:\Users\wiese.c1\Desktop\Progaming 1\pro93a\pro93a\bin\Debug\pro93a.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\pro93a\pro93a\bin\Debug\IronPython.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\pro93a\pro93a\bin\Debug\IronPython.Modules.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\pro93a\pro93a\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\pro93a\pro93a\bin\Debug\Microsoft.Scripting.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\pro93a\pro93a\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\wiese.c1\Desktop\Progaming 1\pro93a\pro93a\obj\Debug\pro93a.pyprojResolveAssemblyReference.cache
+C:\Users\wiese.c1\Desktop\Progaming 1\pro93a\pro93a\obj\Debug\pro93a.MainForm.resources
+C:\Users\wiese.c1\Desktop\Progaming 1\pro93a\pro93a\obj\Debug\pro93a.pyproj.GenerateResource.Cache
+C:\Users\wiese.c1\Desktop\Progaming 1\pro93a\pro93a\obj\Debug\pro93a.exe
