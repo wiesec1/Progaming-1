@@ -26,7 +26,7 @@ class MainForm(Form):
 		self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 24, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label1.Location = System.Drawing.Point(13, 13)
 		self._label1.Name = "label1"
-		self._label1.Size = System.Drawing.Size(210, 38)
+		self._label1.Size = System.Drawing.Size(220, 38)
 		self._label1.TabIndex = 0
 		self._label1.Text = "speed limit"
 		# 
@@ -36,7 +36,7 @@ class MainForm(Form):
 		self._label2.Font = System.Drawing.Font("Microsoft Sans Serif", 24, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label2.Location = System.Drawing.Point(13, 67)
 		self._label2.Name = "label2"
-		self._label2.Size = System.Drawing.Size(210, 38)
+		self._label2.Size = System.Drawing.Size(220, 38)
 		self._label2.TabIndex = 1
 		self._label2.Text = "vehicle speed"
 		# 
@@ -148,4 +148,7 @@ class MainForm(Form):
 		self._label4.Text = " "
 
 	def Button1Click(self, sender, e):
-		self._textBox2 - textBox1.Tezt
+		speed = int(self._textBox1.Text)
+		vehicle = int(self._textBox2.Text)
+		fine = 20 + ((vehicle - speed) * 5)
+		self._label4.Text = str(fine)
