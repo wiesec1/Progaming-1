@@ -128,7 +128,7 @@ class MainForm(Form):
 		self._textBox1.Font = System.Drawing.Font("Microsoft Sans Serif", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._textBox1.Location = System.Drawing.Point(284, 8)
 		self._textBox1.Name = "textBox1"
-		self._textBox1.Size = System.Drawing.Size(118, 40)
+		self._textBox1.Size = System.Drawing.Size(168, 40)
 		self._textBox1.TabIndex = 9
 		# 
 		# label7
@@ -137,7 +137,7 @@ class MainForm(Form):
 		self._label7.Font = System.Drawing.Font("Microsoft Sans Serif", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label7.Location = System.Drawing.Point(284, 57)
 		self._label7.Name = "label7"
-		self._label7.Size = System.Drawing.Size(118, 35)
+		self._label7.Size = System.Drawing.Size(168, 35)
 		self._label7.TabIndex = 10
 		# 
 		# label8
@@ -146,7 +146,7 @@ class MainForm(Form):
 		self._label8.Font = System.Drawing.Font("Microsoft Sans Serif", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label8.Location = System.Drawing.Point(284, 104)
 		self._label8.Name = "label8"
-		self._label8.Size = System.Drawing.Size(118, 35)
+		self._label8.Size = System.Drawing.Size(169, 35)
 		self._label8.TabIndex = 11
 		# 
 		# label9
@@ -155,7 +155,7 @@ class MainForm(Form):
 		self._label9.Font = System.Drawing.Font("Microsoft Sans Serif", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label9.Location = System.Drawing.Point(284, 153)
 		self._label9.Name = "label9"
-		self._label9.Size = System.Drawing.Size(118, 35)
+		self._label9.Size = System.Drawing.Size(168, 35)
 		self._label9.TabIndex = 12
 		# 
 		# label10
@@ -164,7 +164,7 @@ class MainForm(Form):
 		self._label10.Font = System.Drawing.Font("Microsoft Sans Serif", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label10.Location = System.Drawing.Point(284, 199)
 		self._label10.Name = "label10"
-		self._label10.Size = System.Drawing.Size(118, 35)
+		self._label10.Size = System.Drawing.Size(168, 35)
 		self._label10.TabIndex = 13
 		# 
 		# label11
@@ -173,7 +173,7 @@ class MainForm(Form):
 		self._label11.Font = System.Drawing.Font("Microsoft Sans Serif", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
 		self._label11.Location = System.Drawing.Point(284, 245)
 		self._label11.Name = "label11"
-		self._label11.Size = System.Drawing.Size(118, 35)
+		self._label11.Size = System.Drawing.Size(168, 35)
 		self._label11.TabIndex = 14
 		# 
 		# MainForm
@@ -213,4 +213,17 @@ class MainForm(Form):
 		self._label11.Text = " "
 
 	def Button1Click(self, sender, e):
-		pass
+		kilowatts = self._textBox1.Text
+		base = self._label7.Text
+		supercharge = self._label8.Text
+		citytax = self._label9.Text
+		pay = float(self._label10.Text)
+		pay = base + supercharge + citytax + 5.9
+		self._label10.Text = str(pay)
+		base = 41.17
+		self._label7.Text = str(base)
+		supercharge = 4.72
+		self._label8.Text = str(supercharge)
+		citytax = 1.42
+		self._label9.Text = str(citytax)
+		
