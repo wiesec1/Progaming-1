@@ -179,7 +179,7 @@ class MainForm(Form):
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.Turquoise
-		self.ClientSize = System.Drawing.Size(465, 335)
+		self.ClientSize = System.Drawing.Size(465, 324)
 		self.Controls.Add(self._label11)
 		self.Controls.Add(self._label10)
 		self.Controls.Add(self._label9)
@@ -217,13 +217,14 @@ class MainForm(Form):
 		base = self._label7.Text
 		supercharge = self._label8.Text
 		citytax = self._label9.Text
-		pay = float(self._label10.Text)
-		pay = base + supercharge + citytax + 5.9
-		self._label10.Text = str(pay)
+		pay = self._label10.Text
 		base = 41.17
 		self._label7.Text = str(base)
 		supercharge = 4.72
 		self._label8.Text = str(supercharge)
 		citytax = 1.42
 		self._label9.Text = str(citytax)
-		
+		pay = 53.31
+		self._label10.Text = str(pay)
+		aftermay20thpay = 55.44
+		self._label11.Text = str(aftermay20thpay)
