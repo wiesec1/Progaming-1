@@ -85,6 +85,9 @@ class MainForm(Form):
 		self._listBox1.Items.Clear()
 
 	def Button1Click(self, sender, e):
-		heading = "1 for num and 4 for second row"
-		for num in range(1, 40+1)
-		self._listBox1.Add()
+		heading = "Pay\t\tHourly"
+		self._listBox1.Items.Add(heading)
+		for hour in range(1, 40+1):
+		pay = 4.00
+		line = str(hour) + "\t\t" + str(float(pay))
+		self._listBox1.Items.Add(line)
