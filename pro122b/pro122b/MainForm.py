@@ -87,7 +87,9 @@ class MainForm(Form):
 	def Button1Click(self, sender, e):
 		heading = "Pay\t\tHourly"
 		self._listBox1.Items.Add(heading)
-		for hour in range(1, 40+1):
 		pay = 4.00
-		line = str(hour) + "\t\t" + str(float(pay))
-		self._listBox1.Items.Add(line)
+		for hour in range(1, 40+1):
+			line = str(hour) + "\t\t" + str(int(pay))
+			pay += 4.00
+			self._listBox1.Items.Add(line)
+			
