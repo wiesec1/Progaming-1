@@ -85,3 +85,7 @@ class MainForm(Form):
 	def Button1Click(self, sender, e):
 		heading = "column1\tcolumn2\tcolumn3\tcolumn4"
 		self._listBox1.Items.Add(heading)
+		for column1 in range(2, 11):
+			self._listBox1.Items.Add(column1)
+			column2 = column1 + 1
+			self._listBox1.Items.Add(column2)
