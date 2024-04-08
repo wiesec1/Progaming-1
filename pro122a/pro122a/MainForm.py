@@ -66,7 +66,7 @@ class MainForm(Form):
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.SystemColors.InfoText
-		self.ClientSize = System.Drawing.Size(832, 402)
+		self.ClientSize = System.Drawing.Size(607, 402)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
 		self.Controls.Add(self._button1)
@@ -84,12 +84,10 @@ class MainForm(Form):
 
 	def Button1Click(self, sender, e):
 		heading = "column1\tcolumn2\tcolumn3\tcolumn4"
-		self._listBox1.Items.Add(heading)
-		column2 = self._listBox1.Items
-		column3 = self._listBox1.Items
-		column4 = self._listBox.Items
-		for column1 in range(2, 11, 1):
+
+		for column1 in range(2, 11, 2):
 			column2 = column1 + 1
-			column3 = c
-			line = str(column1) + "\t" + 
+			column3 = column1 * 2
+			column4 = (column1 ** 2)
+			line = str(column1) + "\t" + str(column2) + "\t" + str(column3) + "\t" + str(column4)
 			self._listBox1.Items.Add(line)
