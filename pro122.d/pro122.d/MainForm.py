@@ -90,4 +90,5 @@ class MainForm(Form):
 		self._listBox1.Items.Add(heading)
 		for x in range(-12, 17):
 			y = x **6 - 3*x **5 - 93*x **4 + 87*x **3 + 1596*x **2 - 1380*x - 2800
-			self._listBox1.Items.Add(y)
+			line = str(x) + "\t\t" + str(y)
+			self._listBox1.Items.Add(line)
