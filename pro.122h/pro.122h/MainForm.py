@@ -1,4 +1,5 @@
-﻿import System.Drawing
+﻿import math
+import System.Drawing
 import System.Windows.Forms
 
 from System.Drawing import *
@@ -24,7 +25,7 @@ class MainForm(Form):
 		self._listBox1.ItemHeight = 37
 		self._listBox1.Location = System.Drawing.Point(13, 3)
 		self._listBox1.Name = "listBox1"
-		self._listBox1.Size = System.Drawing.Size(877, 189)
+		self._listBox1.Size = System.Drawing.Size(912, 189)
 		self._listBox1.TabIndex = 0
 		# 
 		# button1
@@ -69,7 +70,7 @@ class MainForm(Form):
 		# MainForm
 		# 
 		self.BackColor = System.Drawing.Color.BurlyWood
-		self.ClientSize = System.Drawing.Size(902, 278)
+		self.ClientSize = System.Drawing.Size(937, 278)
 		self.Controls.Add(self._button3)
 		self.Controls.Add(self._button2)
 		self.Controls.Add(self._button1)
@@ -89,5 +90,8 @@ class MainForm(Form):
 		heading = "number\t"+"square\t"+"square root\t""cubed\t"+"4th root"
 		self._listBox1.Items.Add(heading)
 		for num in range(1, 21):
-			line = str(num)
-		self._listBox1.Items.Add(line)
+			y = num ** 2
+			x = math.sqrt(num) 
+			round(x, 4)
+			line = str(num) + "\t" + str(y) + "\t" + str(x)
+			self._listBox1.Items.Add(line)
