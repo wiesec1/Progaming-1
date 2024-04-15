@@ -91,7 +91,8 @@ class MainForm(Form):
 		self._listBox1.Items.Add(heading)
 		for num in range(1, 21):
 			y = num ** 2
-			x = math.sqrt(num) 
-			round(x, 4)
-			line = str(num) + "\t" + str(y) + "\t" + str(x)
+			x = round(math.sqrt(num), 4)
+			t = num ** 3 
+			d = round(math.sqrt(num), 4)
+			line = str(num) + "\t" + str(y) + "\t" + str(x) + "\t" + "\t" + str(t) + "\t" + str(d)
 			self._listBox1.Items.Add(line)
