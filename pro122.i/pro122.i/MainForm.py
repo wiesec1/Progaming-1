@@ -91,7 +91,7 @@ class MainForm(Form):
 		heading = "number\tcube root\t	cubed"
 		self._listBox1.Items.Add(heading)
 		for num in range(0, 26):
-			root = round(math.sqrt(3(num)),5) 
+			root = round(math.sqrt((num)),5) 
 			cubed = num ** 3
 			line = str(num) + "\t" + str(root) + "\t" + "\t" + str(cubed)
 			self._listBox1.Items.Add(line)
