@@ -323,38 +323,38 @@ class MainForm(Form):
 		elif bet > moeny and bet > money2:
 			MessageBox.Show("You don't habe enough money!")
 		else:
-				self._button1.BackgroundImage = levOn
-				self._pictureBox4.Visible = True
-				self._timer1.Enabled = True
-				self._label2.Text = str(round(money2, 2))
-				self._progressBar1.Value = 0
+			self._button1.BackgroundImage = levOn
+			self._pictureBox4.Visible = True
+			self._timer1.Enabled = True
+			self._label2.Text = str(round(money2, 2))
+			self._progressBar1.Value = 0
 				
-				num1 = self.num1
-				num2 = self.num2
-				num3 = self.num3
+			num1 = self.num1
+			num2 = self.num2
+			num3 = self.num3
 				
-				if num1 == 1 and num2 == 1 and num3 == 1:
+			if num1 == 1 and num2 == 1 and num3 == 1:
 					money2 += bet * 2
 				
-				if num1 == 2 and num2 == 2 and num3 == 2:
+			if num1 == 2 and num2 == 2 and num3 == 2:
 					money2 += bet * 8
 				
-				if num1 == 3 and num2 == 3 and num3 == 3:
+			if num1 == 3 and num2 == 3 and num3 == 3:
 					money2 += bet * 27
 				
-				if num1 == 4 and num2 == 4 and num3 == 4:
+			if num1 == 4 and num2 == 4 and num3 == 4:
 					money2 += bet * 64
 					
-				if num1 == 5 and num2 == 5 and num3 == 5:
+			if num1 == 5 and num2 == 5 and num3 == 5:
 					money2 += bet * 125
 				
-				self.num1 = 0 
-				self.num2 = 0
-				self.num3 = 0
-				self._label2.Text = str(round(money2, 2))
+			self.num1 = 0 
+			self.num2 = 0
+			self.num3 = 0
+			self._label2.Text = str(round(money2, 2))
 				
-				if money2 <= 0:
-					MessageBox.Show("You ran out of cash!")
+			if money2 <= 0:
+				MessageBox.Show("You ran out of cash!")
 				
 
 	def Timer1Tick(self, sender, e):
@@ -439,5 +439,5 @@ class MainForm(Form):
 			self._progressBar1.Increment(1)
 			if self._progressBar1.Value == self._progressBar1.Maximum:
 				self._timer1.Enabled = False
-				self.picutreBox4.Visible = False
+				self._picutreBox4.Visible = False
 				self._button1.BackgroundImage = levOff
