@@ -300,8 +300,8 @@ class MainForm(Form):
 		im3 = self._pictureBox7.BackgroundImage
 		im4 = self._pictureBox8.BackgroundImage
 		im5 = self._pictureBox9.BackgroundImage
-		imOff = self._pictureBox10.BackgroundImage
-		imOn = self._pictureBox11.BackgroundImage
+		levOff = self._pictureBox10.BackgroundImage
+		levOn = self._pictureBox11.BackgroundImage
 		rnd = System.Random()
 		num1 = 0
 		num2 = 0
@@ -363,8 +363,8 @@ class MainForm(Form):
 		im3 = self._pictureBox7.BackgroundImage
 		im4 = self._pictureBox8.BackgroundImage
 		im5 = self._pictureBox9.BackgroundImage
-		imOff = self._pictureBox10.BackgroundImage
-		imOn = self._pictureBox11.BackgroundImage
+		levOff = self._pictureBox10.BackgroundImage
+		levOn = self._pictureBox11.BackgroundImage
 		rnd = System.Random()
 		num1 = 0
 		num2 = 0
