@@ -320,7 +320,7 @@ class MainForm(Form):
 			MessageBox.Show("You habe no money!")
 		elif bet < 1:
 			MessageBox.Show("You must bet at leat 1 dollar!")
-		elif bet > moeny and bet > money2:
+		elif bet > money and bet > money2:
 			MessageBox.Show("You don't habe enough money!")
 		else:
 			self._button1.BackgroundImage = levOn
@@ -374,7 +374,7 @@ class MainForm(Form):
 		pb2 = self._pictureBox2
 		pb3 = self._pictureBox3
 		
-		for lcv in range(0, 1000):
+		for lcv in range(0, 2):
 			num1 = rnd.Next(1, 6)
 			num2 = rnd.Next(1, 6)
 			num3 = rnd.Next(1, 6)
@@ -413,31 +413,10 @@ class MainForm(Form):
 			elif num3 == 5:
 				pb3.BackgroundImage = im5
 				
-			if num4 == 1:
-				pb4.BackgroundImage = im1
-			elif num4 == 2:
-				pb4.BackgroundImage = im2
-			elif num4 == 3:
-				pb4.BackgroundImage = im3
-			elif num4 == 4:
-				pb4.BackgroundImage = im4
-			elif num4 == 5:
-				pb4.BackgroundImage = im5
-				
-			if num5 == 1:
-				pb5.BackgroundImage = im1
-			elif num5 == 2:
-				pb5.BackgroundImage = im2
-			elif num5 == 3:
-				pb5.BackgroundImage = im3
-			elif num5 == 4:
-				pb5.BackgroundImage = im4
-			elif num5 == 5:
-				pb5.BackgroundImage = im5
 				
 			
 			self._progressBar1.Increment(1)
 			if self._progressBar1.Value == self._progressBar1.Maximum:
 				self._timer1.Enabled = False
-				self._picutreBox4.Visible = False
+				self._pictureBox4.Visible = False
 				self._button1.BackgroundImage = levOff
