@@ -90,8 +90,9 @@ class MainForm(Form):
 	def Button1Click(self, sender, e):
 		heading = "number\tcube root\t	cubed"
 		self._listBox1.Items.Add(heading)
-		for num in range(0, 26):
-			root = round(math.sqrt((num)),5) 
+		for num in range(-25, 26):
+			root = round(abs(num) ** 0.3333333333333, 5) 
+			
 			cubed = num ** 3
 			line = str(num) + "\t" + str(root) + "\t" + "\t" + str(cubed)
 			self._listBox1.Items.Add(line)
