@@ -420,3 +420,6 @@ class MainForm(Form):
 				self._timer1.Enabled = False
 				self._pictureBox4.Visible = False
 				self._button1.BackgroundImage = levOff
+				self.num1 = num1
+				self.num2 = num2
+				self.num3 = num3
