@@ -10,7 +10,7 @@ class MainForm(Form):
 		self.R = System.Random()
 		self.ballup = 0
 		self.balld = 0
-		self.flageleft = False
+		self.flagleft = False
 		self.flagright = False
 	
 	def InitializeComponent(self):
@@ -131,27 +131,93 @@ class MainForm(Form):
 		pass
 
 	def MainFormKeyDown(self, sender, e):
-		pass
+		tball = self._timerball
+		tdum = self._timerdummy
+		tbool = self._timerboolean
+		tmult = self._timermulti
+		tleft = self._timerleft
+		tright = self._timerright
+		bl = self._lblball
+		lblf = self._lblleft
+		lbrt = self._lblright
+		title = self._lbltitle
+		
+		def reset():
+			title.Visible = True
+			title.Text = "Press Enter to start or M to start Multiplayer"
+			self._leftscore.Text = "0"
+			self._rightscore.Text = "0"
+			tball.Enabled = False
+			tdum.Enbaled = False
+			tbool.Enabled = False
+			tmult.Enabeled = False
+			tleft.Enabled = False
+			tright.Enabled = False
+			bl.Left = self.Width // 2
+			bl.Top = self.Height // 2
+			lblf.Top = (self.Height // 2) - 50 + lblf.Height
+			lbrt.Top = (self.Height // 2) - 50 + lblr.Height
+			"""rest secrets"""
+			bl.BlackColor = Color.White
+			
+		if e.KeyCode == Keys.R:
+			reset()
+		
+		"""secert control"""
+		
+		if e.KeyCode == Keys.Enter:
+			tball.Enabled = True
+			tdum.Enabled = True
+			tbool.Enabled = True
+			if tmult.Enabled:
+				tbool.Enabled = False
+			title.Visible = False
+			
+		if e.KeyCode == Keys.M:
+			reset()
+			title.Visible = True
+			title.Text = "Use W and S to mobe the left paddle; hit Enter to start"
+			tmult.Enabled = True
+			
+		if tdum.Enabled:
+			if e.KeyCode == Keys.Up:
+				self.flagright = False
+				tright.Enabled = True
+			elif e.KeyCode == Keys.Down:
+				self.flagright = True
+				tright.Enabled = True
+			elif tright.Enabled and self.flagright == False:
+				tright.Enabled = False
+				
+		""" finisj controls"""
+		if tmult.Enabled and tball.Enabled:
+			if e.KeyCode == Keys.W:
+				self.flagleft = False
+				tleft.Enabled = True
+			elif e.key.Code == Keys.S:
+				self.flagleft = True
+				self.flagleft = True
+			
 
 	def MainFormLoad(self, sender, e):
 		# 3 unique secrets/ cheat/ easter eggs 
 		#finish mul and dummy Ai
 		self.balld = 1
-		self._ballup = sekf.R.Next(-4, 5)
+		self._ballup = self.R.Next(-4, 5)
 		
-	def pdlTick(self, pdl, flagd, tumr):
+	def pdlTick(self, pdl, flagd, tmr):
 		if flagd == True:
 			pdl.Top += 5
 		else:
-			pld.Top -= 5
+			pdl.Top -= 5
 		if pdl.Top <= 10 or pdl.Bottom >= self.Height - 50:
 			tmr.Enabled = False
 
 	def TimerleftTick(self, sender, e):
-		self.pdlTick(self._lblleft, self.flageleft, self._timerleft)
+		self.pdlTick(self._lblleft, self.flagleft, self._timerleft)
 
 	def TimerrightTick(self, sender, e):
-		self.pdlTick(self._lblright, self.flageright, self._timerright)
+		self.pdlTick(self._lblright, self.flagright, self._timerright)
 
 	def LblballClick(self, sender, e):
 		self.LblballClick. BackColor = Color.Red
