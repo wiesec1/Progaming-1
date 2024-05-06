@@ -131,15 +131,15 @@ class MainForm(Form):
 		ball = self._lblball
 		lpdl = self._lblleft
 		rpdl = self._lblright
-		rscore = int(self.rightscore.Text)
-		lscore = int(self.leftscore.Text)
+		rscore = int(self._rightscore.Text)
+		lscore = int(self._leftscore.Text)
 		ball.Top += self.ballup
 		ball.Left += 8 * self.balld
 		
 		if ball.Right >= rpdl.Left and ball.Bottom >= rpdl.Top and ball.Top <= rpdl.Bottom:
 			self.balld = -1 
 			self.ballup = self.R.Next(-4, 5)
-		elif ball.Left >= lpdl.Left and ball.Bottom >= lpdl.Top and ball.Top <= lpdl.Bottom:
+		elif ball.Left <= lpdl.Left and ball.Bottom <= lpdl.Top and ball.Top <= lpdl.Bottom:
 			self.balld = 1
 			self.ballup = self.R.Next(-4 , 5)
 		
@@ -155,13 +155,13 @@ class MainForm(Form):
 		elif ball.Top >= self.Height - 50:
 			self.ballup = -1
 		
-		if ball.location.X <= 0 or (ball.location.X < lpdl - 20 and ball.location.Y < lpdl.Top):
+		if ball.Location.X <= 0 or (ball.Location.X < lpdl.Left - 20 and ball.Location.Y < lpdl.Top):
 			rscore += 1
 			ball.Left = self.Width // 2
 			ball.Top = self.Height // 2
 			self._rightscore.Text = str(rscore)
 		
-		if  ball.loaction.X >= self.Width or (ball.Loaction.X > rpdl.Right + 20 and ball.location.Y > rpdl.Top):
+		if ball.Loaction.X >= self.Width or (ball.Loaction.X > rpdl.Right + 20 and ball.Location.Y > rpdl.Top):
 			lscore += 1
 			ball.Left = self.Width //2 
 			ball.Top = self.Height // 2
@@ -173,9 +173,17 @@ class MainForm(Form):
 			self._timerball.Enabled = False
 			ball.Left = self.Width // 2
 			ball.Top = self.Height // 2 
-			self.balld = 0
-			self.lbltitle.Visible = True
+			self.ballup = 0
+			self._lbltitle.Visible = True
 			self._lbltitle.Text = "Left Player Wins! Press R to restart"
+		
+		if rscore == 10:
+			self._timerball.Enabled = False
+			ball.Left = self.Width // 2
+			ball.Top = self.Height // 2
+			self.ballup = 0 
+			self._lbltitle.Visible = True
+			self._lbltitle.Tetx = "Right Player Wins! Press R to restart"
 		
 		"""todo ?"""
 		if self.timerboolean.Enabled == Ture:
@@ -219,9 +227,7 @@ class MainForm(Form):
 		if e.KeyCode == Keys.Enter:
 			tball.Enabled = True
 			tdum.Enabled = True
-			tbool.Enabled = True
-			if tmult.Enabled:
-				tbool.Enabled = False
+			tbool.Enabled = not tmult.Enabled
 			title.Visible = False
 			
 		if e.KeyCode == Keys.M:
