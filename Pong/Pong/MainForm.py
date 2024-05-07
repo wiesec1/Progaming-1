@@ -139,12 +139,12 @@ class MainForm(Form):
 		if ball.Right >= rpdl.Left and ball.Bottom >= rpdl.Top and ball.Top <= rpdl.Bottom:
 			self.balld = -1 
 			self.ballup = self.R.Next(-4, 5)
-		elif ball.Left <= lpdl.Left and ball.Bottom <= lpdl.Top and ball.Top <= lpdl.Bottom:
+		elif ball.Left <= lpdl.Left and ball.Bottom >= lpdl.Top and ball.Top <= lpdl.Bottom:
 			self.balld = 1
 			self.ballup = self.R.Next(-4 , 5)
 		
 		if ball.Top <= 0:
-			self.balld = -1
+			self.balld = 1
 			ball.Top += 5 * self.balld	
 		elif ball.Bottom >= self.Height:
 			self.balld = 1
@@ -161,7 +161,7 @@ class MainForm(Form):
 			ball.Top = self.Height // 2
 			self._rightscore.Text = str(rscore)
 		
-		if ball.Loaction.X >= self.Width or (ball.Loaction.X > rpdl.Right + 20 and ball.Location.Y > rpdl.Top):
+		if ball.Location.X >= self.Width or (ball.Location.X > rpdl.Right + 20 and ball.Location.Y > rpdl.Top):
 			lscore += 1
 			ball.Left = self.Width //2 
 			ball.Top = self.Height // 2
@@ -183,10 +183,10 @@ class MainForm(Form):
 			ball.Top = self.Height // 2
 			self.ballup = 0 
 			self._lbltitle.Visible = True
-			self._lbltitle.Tetx = "Right Player Wins! Press R to restart"
+			self._lbltitle.Text = "Right Player Wins! Press R to restart"
 		
 		"""todo ?"""
-		if self.timerboolean.Enabled == Ture:
+		if self._timerboolean.Enabled == True:
 			lpdl.Top = ball.Top - 20
 
 	def MainFormKeyDown(self, sender, e):
@@ -215,7 +215,7 @@ class MainForm(Form):
 			bl.Left = self.Width // 2
 			bl.Top = self.Height // 2
 			lblf.Top = (self.Height // 2) - 50 + lblf.Height
-			lbrt.Top = (self.Height // 2) - 50 + lblr.Height
+			lbrt.Top = (self.Height // 2) - 50 + lbrt.Height
 			"""rest secrets"""
 			bl.BlackColor = Color.White
 			
@@ -230,6 +230,10 @@ class MainForm(Form):
 			tbool.Enabled = not tmult.Enabled
 			title.Visible = False
 			
+		if e.KeyCode == Keys.L:
+			reset()
+			title.Text = "The Right player wins! Press r to restart"
+		
 		if e.KeyCode == Keys.M:
 			reset()
 			title.Visible = True
@@ -252,8 +256,8 @@ class MainForm(Form):
 				self.flagleft = False
 				tleft.Enabled = True
 			elif e.key.Code == Keys.S:
-				self.flagleft = True
-				self.flagleft = True
+				self.flagleft = False
+				tleft.Enabled = True
 			
 
 	def MainFormLoad(self, sender, e):
