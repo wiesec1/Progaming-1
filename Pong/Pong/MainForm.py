@@ -64,6 +64,7 @@ class MainForm(Form):
 		self._rightscore.TabIndex = 2
 		self._rightscore.Text = "0"
 		self._rightscore.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+		self._rightscore.Click += self.RightscoreClick
 		# 
 		# lblball
 		# 
@@ -207,9 +208,9 @@ class MainForm(Form):
 			self._leftscore.Text = "0"
 			self._rightscore.Text = "0"
 			tball.Enabled = False
-			tdum.Enbaled = False
+			tdum.Enabled = False
 			tbool.Enabled = False
-			tmult.Enabeled = False
+			tmult.Enabled = False
 			tleft.Enabled = False
 			tright.Enabled = False
 			bl.Left = self.Width // 2
@@ -217,7 +218,7 @@ class MainForm(Form):
 			lblf.Top = (self.Height // 2) - 50 + lblf.Height
 			lbrt.Top = (self.Height // 2) - 50 + lbrt.Height
 			"""rest secrets"""
-			bl.BlackColor = Color.White
+			bl.BackColor = Color.White
 			
 		if e.KeyCode == Keys.R:
 			reset()
@@ -232,6 +233,12 @@ class MainForm(Form):
 			
 		if e.KeyCode == Keys.L:
 			reset()
+			title.Visible = True
+			title.Text = "The Right player wins! Press r to restart"
+			
+		if e.KeyCode == Keys.NumPad0:
+			reset()
+			title.Visible = True
 			title.Text = "The Right player wins! Press r to restart"
 		
 		if e.KeyCode == Keys.M:
@@ -239,6 +246,11 @@ class MainForm(Form):
 			title.Visible = True
 			title.Text = "Use W and S to mobe the left paddle; hit Enter to start"
 			tmult.Enabled = True
+		
+		if e.KeyCode == Keys.A:
+			reset()
+			title.Visible = True
+			title.Text = "Left Player Win! press R to Reset"
 			
 		if tdum.Enabled:
 			if e.KeyCode == Keys.Up:
@@ -255,8 +267,8 @@ class MainForm(Form):
 			if e.KeyCode == Keys.W:
 				self.flagleft = False
 				tleft.Enabled = True
-			elif e.key.Code == Keys.S:
-				self.flagleft = False
+			elif e.KeyCode == Keys.S:
+				self.flagleft = True
 				tleft.Enabled = True
 			
 
@@ -281,7 +293,7 @@ class MainForm(Form):
 		self.pdlTick(self._lblright, self.flagright, self._timerright)
 
 	def LblballClick(self, sender, e):
-		self.LblballClick. BackColor = Color.Red
+		self._lblball.BackColor = Color.Red
 		self.BackColor = Color.Green
 		# more easter eggs later """
 
@@ -291,3 +303,6 @@ class MainForm(Form):
 		self.lblball.Top = self.Width //2
 		self.lbltitle.Width = self.Width - 25
 		self.rightscore.Left = self.Width - 75 - self._rightscore.Width
+
+	def RightscoreClick(self, sender, e):
+		pass
