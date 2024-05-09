@@ -142,5 +142,5 @@ class MainForm(Form):
 
 	def Button1Click(self, sender, e):
 		strfullname = " "
-		strfullname = self._textBox1.Text + " " + self._textBox2.Text
+		strfullname = self._textBox1.Text + "" + self._textBox2.Text
 		self._label4.Text = strfullname
