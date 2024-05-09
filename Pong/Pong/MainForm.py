@@ -219,6 +219,7 @@ class MainForm(Form):
 			lbrt.Top = (self.Height // 2) - 50 + lbrt.Height
 			"""rest secrets"""
 			bl.BackColor = Color.White
+			self.BackColor = Color.Black
 			
 		if e.KeyCode == Keys.R:
 			reset()
@@ -250,7 +251,12 @@ class MainForm(Form):
 		if e.KeyCode == Keys.A:
 			reset()
 			title.Visible = True
-			title.Text = "Left Player Win! press R to Reset"
+			title.Text = "Left Player Win! Press R to Reset"
+			
+		if e.KeyCode == Keys.Tab:
+			reset()
+			title.Visible = True
+			title.Text = "Left Player Win! Press R to Reset"
 			
 		if tdum.Enabled:
 			if e.KeyCode == Keys.Up:
