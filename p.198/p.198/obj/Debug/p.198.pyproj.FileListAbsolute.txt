@@ -1,0 +1,12 @@
+C:\Users\wiese.c1\Desktop\progaming1\Progaming-1\p.198\p.198\bin\Debug\p.198.exe.config
+C:\Users\wiese.c1\Desktop\progaming1\Progaming-1\p.198\p.198\bin\Debug\p.198.exe
+C:\Users\wiese.c1\Desktop\progaming1\Progaming-1\p.198\p.198\bin\Debug\p.198.dll
+C:\Users\wiese.c1\Desktop\progaming1\Progaming-1\p.198\p.198\bin\Debug\IronPython.dll
+C:\Users\wiese.c1\Desktop\progaming1\Progaming-1\p.198\p.198\bin\Debug\IronPython.Modules.dll
+C:\Users\wiese.c1\Desktop\progaming1\Progaming-1\p.198\p.198\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\wiese.c1\Desktop\progaming1\Progaming-1\p.198\p.198\bin\Debug\Microsoft.Scripting.dll
+C:\Users\wiese.c1\Desktop\progaming1\Progaming-1\p.198\p.198\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\wiese.c1\Desktop\progaming1\Progaming-1\p.198\p.198\obj\Debug\p.198.pyprojResolveAssemblyReference.cache
+C:\Users\wiese.c1\Desktop\progaming1\Progaming-1\p.198\p.198\obj\Debug\p._98.MainForm.resources
+C:\Users\wiese.c1\Desktop\progaming1\Progaming-1\p.198\p.198\obj\Debug\p.198.pyproj.GenerateResource.Cache
+C:\Users\wiese.c1\Desktop\progaming1\Progaming-1\p.198\p.198\obj\Debug\p.198.exe

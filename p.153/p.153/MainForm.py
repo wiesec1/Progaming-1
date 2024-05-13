@@ -130,10 +130,10 @@ class MainForm(Form):
 		Application.Exit()
 
 	def Button1Click(self, sender, e):
-		Annualy = 0.0
+		Annual = 0.0
 		pay = 0.0
 		salary = 0.0
-		Annualy = float(self._textBox1.Text)
-		pay = float(self._textBox2.Text
-		salary = Annualy / pay
+		Annual = float(self._textBox1.Text)
+		pay = float(self._textBox2.Text)
+		salary = Annual / pay
 		self._label4.Text = str(round(salary, 2))
