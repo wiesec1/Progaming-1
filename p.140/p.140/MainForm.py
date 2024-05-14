@@ -275,5 +275,5 @@ class MainForm(Form):
 		math = 0.0
 		self._label5.Text = "MOD"
 		answer = float(self._textBox1.Text) + float(self._textBox2.Text)
-		math = answer /5
+		math = answer * .01
 		self._label6.Text = str(math)

@@ -237,24 +237,26 @@ class MainForm(Form):
 		Application.Exit()
 
 	def Button2Click(self, sender, e):
-		self._textBox1.Text()
-		self._textBox2.Text()
-		self._textBox3.Text()
-		self._label7.Text()
-		self._label8.Text()
-		self._label9.Text()
-		self._label11.Text()
+		self._textBox1.Text = " "
+		self._textBox2.Text = " "
+		self._textBox3.Text = " "
+		self._label7.Text = " "
+		self._label8.Text = " "
+		self._label9.Text = " "
+		self._label11.Text = " "
 
 	def Button1Click(self, sender, e):
 		d = int(self._textBox1.Text)
 		e = int(self._textBox2.Text)
 		f = int(self._textBox3.Text)
-		A = 15 * d
-		B = 12 * e
-		C = 9 * f
 		A = self._label7.Text
 		B = self._label8.Text
 		C = self._label9.Text
+		A = 15 * d
+		B = 12 * e
+		C = 9 * f
 		total = A + B + C
-		self._label11.Text = str(total)
-		
+		self._label7.Text = str(A)
+		self._label8.Text = str(B)
+		self._label9.Text = str(C)
+		self._label11.Text = str(total)		
